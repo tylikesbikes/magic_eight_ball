@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
+import { getRandomElementFromArray} from './helpers';
 
 const DEFAULT_MSG = 'Ask me a question';
 const DEFAULT_COLOR = 'black';
 
-function getRandomElementFromArray(arr) {
-    const randIdx = Math.floor(Math.random() * arr.length);
-    return arr[randIdx];
-}
+
 
 const EightBall = ({answers}) => {
     let [msg, setMsg] = useState(DEFAULT_MSG);
